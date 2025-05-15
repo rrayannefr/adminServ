@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const usuario_valido = "adminUser";
+const senha_valida = "securePass123";
+
+let usuario_digitado = "adminUser";
+let senha_digitada = "securePass123";
+
+let login_status_message = "";
+
+if (usuario_digitado === usuario_valido && senha_digitada === senha_valida) {
+    login_status_message = "Login bem-sucedido! Bem-vindo!";
+} else {
+    if (usuario_digitado === usuario_valido) {
+        login_status_message = "Senha incorreta. Tente novamente.";
+    } else {
+        login_status_message = "Usuário não encontrado.";
+    }
+}
+
+console.log(login_status_message);
+
+if (true) {
+    var teste_escopo_var = "Variável com var dentro do if";
+    let teste_escopo_let = "Variável com let dentro do if";
+    console.log("Dentro do if - teste_escopo_var:", teste_escopo_var);
+    console.log("Dentro do if - teste_escopo_let:", teste_escopo_let);
+}
+
+console.log("Fora do if - teste_escopo_var:", teste_escopo_var);
+console.log("Fora do if - teste_escopo_let:", typeof teste_escopo_let);
+    </script>
+</body>
+</html>
